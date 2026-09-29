@@ -4,7 +4,7 @@ def f(x):
     '''
     return x ** 2
     '''
-    return x ** 3
+    return x ** 2
 
 def get_func_values():
-    return {f(x): x for x in np.arange(-10 , 10).tolist()}
+    return {x: f(x) for x in np.arange(-9 , 10).tolist()}
